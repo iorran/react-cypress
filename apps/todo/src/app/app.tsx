@@ -10,9 +10,9 @@ const GreeterSection = styled.div`
 export function App() {
   return (
     <>
-      <header data-cy="header"> 
+      <header> 
         <GreeterSection>
-          <SharedGreeter name="Iorran" />
+          <SharedGreeter personName="Iorran" />
         </GreeterSection>
       </header>
       <main>

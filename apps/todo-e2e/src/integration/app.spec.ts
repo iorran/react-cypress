@@ -2,6 +2,6 @@ describe('todo', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
-    cy.getEl('header').contains('Hi there');
+    cy.getEl('greeting').contains('Hi there');
   });
 });

@@ -4,13 +4,13 @@ import { SharedGreeter, SharedGreeterProps } from './shared-greeter';
 
 export default {
   component: SharedGreeter,
-  title: 'SharedGreeter',
+  title: 'Shared Greeter'
 };
 
 export const primary = () => {
-  const props: SharedGreeterProps = {
-    name: text('name', ''),
+  const sharedGreeterProps: SharedGreeterProps = {
+    personName: text('Person Name', 'Juri')
   };
 
-  return <SharedGreeter name={props.name} />;
+  return <SharedGreeter personName={sharedGreeterProps.personName} />;
 };
