@@ -1,22 +1,16 @@
 import React from 'react';
 
-import { SharedGreeter } from '@mynxworkspace/shared/ui';
-
-import styled from 'styled-components'; 
- 
-const GreeterSection = styled.div`
-`;
+import { SharedGreeter, Input, List } from '@mynxworkspace/shared/ui';
 
 export function App() {
   return (
     <>
       <header> 
-        <GreeterSection>
-          <SharedGreeter personName="Iorran" />
-        </GreeterSection>
+        <SharedGreeter personName="Iorran" />
       </header>
       <main>
-           
+        <Input onChange={() => {console.log(1)}} />
+        <List todos={['Todo 1']} />
       </main>
     </>
   );

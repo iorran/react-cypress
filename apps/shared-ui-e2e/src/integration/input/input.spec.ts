@@ -1,10 +1,12 @@
 describe('Input component', () => {
-  describe('Style', () => {
-    it('should have red border', () => {
-      cy.visit('/iframe.html?id=input--primary');
-      cy.getEl('input')
-        .should('have.css', 'border-color')
-        .and('eq', 'rgb(255, 0, 0)')
-    });
-  });
+
+  beforeEach(() => {
+    cy.visit('/iframe.html?id=input--primary');
+  })
+ 
+  it('should have red border', () => {
+    cy.findByRole('textbox')
+      .should('have.css', 'background-color')
+      .and('eq', 'rgb(63, 60, 60)');
+  }); 
 });
