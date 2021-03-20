@@ -15,5 +15,4 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import '@mynxworkspace/shared/e2e-utils'
 import '@testing-library/cypress/add-commands';

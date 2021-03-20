@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const ListStyled = styled.div` 
     width: 100%;
     padding: 8px;
-    background-color: #000;
     color: #FFF;
 `; 
 

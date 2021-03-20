@@ -10,8 +10,9 @@ export const primary = () => {
   const InputProps: InputProps = {
     onChange: () => {
       console.log(1)
-    }
+    },
+    value: ''
   };
 
-  return <Input onChange={InputProps.onChange} />;
+  return <Input onChange={InputProps.onChange} value={InputProps.value} />;
 };

@@ -1,4 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Container = styled.div` 
+    width: 100%; 
+    color: #FFF;
+`; 
 
 export interface SharedGreeterProps {
   personName: string;
@@ -6,9 +12,9 @@ export interface SharedGreeterProps {
 
 export const SharedGreeter = (props: SharedGreeterProps) => {
   return (
-    <div>
-      <h1 data-cy="greeting">Hi there, {props.personName}! How's your day?</h1>
-    </div>
+    <Container>
+      <h1 data-testid="greeting">Hi there, {props.personName}! How's your day?</h1>
+    </Container>
   );
 };
 

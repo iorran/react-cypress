@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { InputHTMLAttributes } from 'react';
 import styled from 'styled-components';
 
 const CustomInput = styled.input`
@@ -10,12 +10,10 @@ const CustomInput = styled.input`
     color: #fff;
 `;
 
-export interface InputProps {
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
-}
+export type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
-export const Input = ({ onChange }: InputProps) => {
-  return <CustomInput onChange={onChange} />
+export const Input = (props: InputProps) => {
+  return <CustomInput {...props} />
 };
 
 export default Input;
