@@ -21,4 +21,4 @@ jobs:
       
       - name: Run Shared UI E2E
         shell: bash
-        run: run shared-ui-e2e:e2e --watch --headless --key=${{ secrets.SHAREDUIE2EKEY }} --record
+        run: npm run shared-ui-e2e:e2e --watch --headless --key=${{ secrets.SHAREDUIE2EKEY }} --record
