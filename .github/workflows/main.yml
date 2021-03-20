@@ -21,4 +21,4 @@ jobs:
       
       - name: Run Shared UI E2E
         shell: bash
-        run: npm run affected:e2e --base=main~1 --head=main --record --key=${{ secrets.SHAREDUIE2EKEY }}
+        run: npm run e2e shared-ui-e2e --record --key=${{ secrets.SHAREDUIE2EKEY }}
