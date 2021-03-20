@@ -18,6 +18,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: git fetch origin main
       - run: npm install
-      - name: Run Affected Tests
+      
+      - name: Run Shared UI E2E
         shell: bash
-        run: npm run affected:test -- --base=remotes/origin/main
+        run: run shared-ui-e2e:e2e --watch --headless --key=${{ secrets.shared-ui-e2e-key }} --record
